@@ -255,7 +255,7 @@
             return;
         }
         
-        _progress = self.fromProgress + d * (self.toProgress - self.fromProgress);
+        self->_progress = self.fromProgress + d * (self.toProgress - self.fromProgress);
         UIBezierPath *path = [self layoutPath];
         
         dispatch_async(dispatch_get_main_queue(), ^{
